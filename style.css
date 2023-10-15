@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@400;800&display=swap');
+
+
+
+:root{
+    --pink: #ED91A0;
+    --grey: rgb(230,228,227);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    font-family: 'REM', sans-serif;
+}
+
+.bone{
+    width: 100px;
+}
+.dashboard{
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.women-icon{
+    width: 100px;
+    border-radius: 50px;
+}
+.info-icons{
+    width: 30px;
+    color: white;
+}
+.main-info > div:hover, .more-info > div:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.search-icon, .bell-icon{
+    width: 40px;
+}
+.doggie{
+    width: 100px;
+    border-radius: 50px;
+}
+.hi{
+    font-size: 16px;
+}
+
+.sidebar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: var(--pink);
+}
+.header{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: white;
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+    
+}
+.main-container{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: var(--grey);
+}
+.divs-container > h2{
+    margin: 20px;
+}
+.main-info > div, .more-info > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    font-weight: 700;
+}
+.search-profile, .welcome-container, .search, .profile-container, .welcome-container > div{
+    display: flex;
+    align-items: center;
+    
+}
+.search-profile, .welcome-container{
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.welcome-container > :first-child{
+    width: 360px;
+    gap: 20px;
+}
+
+.profile-container{
+    gap: 15px
+}
+.profile-container > img{
+    width: 40px;
+}
+/* buttons */
+.header-btns{
+    display: flex;
+    gap: 20px
+}
+.header-btns > button{
+    border: none;
+    padding: 15px 40px;
+    border-radius: 7px;
+    font-weight: 700;
+    background-color: var(--pink);
+}
+.header-btns > button:hover{
+    opacity: 50%;
+    cursor: pointer;
+    color: white;
+
+}
+/* search */
+.search{
+    gap: 20px;
+}
+
+
+
+
+/* main content */
+.content-divs{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+.content-divs > div{
+    padding: 30px;
+    background-color:azure;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 10px;
+}
+.main-container{
+    display: flex;
+}
+.announcements-trending{
+    display: grid;
+    gap: 30px;
+   padding: 20px;
+}
+.announcements{
+    width: 300px;
+}
+
+.announcements > div, .trending > div {
+    background-color:azure;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.announcements > div > div {
+    margin-bottom: 30px;
+}
+.announcements > h2, .trending > h2 {
+    margin-bottom: 20px;
+}
+.trending-div{
+    display: flex;
+    align-items: center;
+}
+/* interactive icnobs */
+.interactive-icons{
+    text-align: end;
+
+}
+.interactive-icon{
+    width: 30px;
+}
+.interactive-icon:hover{
+    cursor: pointer;
+    opacity: 30%;
+}
+.trending-div > div{
+    cursor: pointer;
+}
+/* media screens */
+@media  screen and (min-width: 600px) {
+    .content-divs{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 1080px){
+    .content-divs{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+form {
+    width:100%
+}
+
+.search {
+    width: 100%
+}
+
+input {
+    width: 70%;
+    border: none;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+input {
+    border-radius: 10px;
+    background-color: #afafaf;
+    padding: 0.5em 1.5em;
+}
+
+input:hover, input:focus {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+    background-color: #afafaf9d;
+
+}
