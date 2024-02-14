@@ -2,7 +2,7 @@
 ### Links
 
 
-- Live Site URL: [Add live site URL here]([https://omiadze.github.io/sign-up_form/](https://omiadze.github.io/Admin-Dashboard/))
+- Live Site URL: [Add live site URL here](https://omiadze.github.io/Admin-Dashboard/)
 
 ## My process
 
